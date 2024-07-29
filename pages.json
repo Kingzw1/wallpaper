@@ -17,17 +17,19 @@
 			"path" : "pages/user/user",
 			"style" : 
 			{
-				"navigationBarTitleText" : ""
+				"navigationBarTitleText" : "我的"
 			}
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationBarTitleText": "咸虾米壁纸",
+		"navigationBarBackgroundColor": "#fff",
 		"backgroundColor": "#F8F8F8"
 	},
 	"tabBar": {
+		"color": "#9799a5",
+		"selectedColor": "#28b389",
 		"list": [
 			{
 				"text": "推荐",

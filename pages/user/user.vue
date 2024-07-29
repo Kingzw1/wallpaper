@@ -1,6 +1,94 @@
 <template>
-	<view>
-		我的
+	<view class="userLayout">
+		<view class="userInfo">
+			<view class="avatar">
+				<image src="../../static/logo.png" mode="aspectFill"></image>
+			</view>
+			<view class="ip">
+				100.100.100.100
+			</view>
+			<view class="addres">
+				来自于:江西
+			</view>
+		</view>
+		<view class="section">
+			<view class="list">
+				<view class="row">
+					<view class="left">
+						<uni-icons type="download-filled" size="20" color="#28b389"></uni-icons>
+						<view class="text">
+							我的下载
+						</view>
+					</view>
+					<view class="right">
+						<view class="text">
+							33
+						</view>
+						<uni-icons type="forward" size="15" color="#aaa"></uni-icons>
+					</view>
+				</view>
+				<view class="row">
+					<view class="left">
+						<uni-icons type="star-filled" size="20" color="#28b389"></uni-icons>
+						<view class="text">
+							我的下载
+						</view>
+					</view>
+					<view class="right">
+							<view class="text">
+								33
+							</view>
+							<uni-icons type="forward" size="15" color="#aaa"></uni-icons>
+					</view>
+				</view>
+				<view class="row">
+					<view class="left">
+						<uni-icons type="chatboxes-filled" size="20" color="#28b389"></uni-icons>
+						<view class="text">
+						我的下载
+						</view>
+					</view>
+					<view class="right">
+						<view class="text">
+						33
+						</view>
+						<uni-icons type="forward" size="15" color="#aaa"></uni-icons>
+					</view>
+				</view>			
+			</view>
+		</view>
+		<view class="section">
+			<view class="list">
+				<view class="row">
+					<view class="left">
+						<uni-icons type="notification-filled" size="20" color="#28b389"></uni-icons>
+						<view class="text">
+							我的下载
+						</view>
+					</view>
+					<view class="right">
+						<view class="text">
+							33
+						</view>
+						<uni-icons type="forward" size="15" color="#aaa"></uni-icons>
+					</view>
+				</view>
+				<view class="row">
+					<view class="left">
+						<uni-icons type="flag-filled" size="20" color="#28b389"></uni-icons>
+						<view class="text">
+							我的下载
+						</view>
+					</view>
+					<view class="right">
+						<view class="text">
+							33
+						</view>
+						<uni-icons type="forward" size="15" color="#aaa"></uni-icons>
+					</view>
+				</view>
+			</view>
+		</view>
 	</view>
 </template>
 
@@ -8,6 +96,68 @@
 	
 </script>
 
-<style lang="scss">
-
+<style lang="scss" scoped>
+.userLayout{
+	.userInfo{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		padding: 50rpx 0;
+		.avatar{
+			width: 160rpx;
+			height: 160rpx;
+			border-radius: 50%;
+			overflow: hidden;
+			image{
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.ip{
+			font-size: 44rpx;
+			color:#333;
+			padding: 20rpx 0 5rpx;
+			
+		}
+		.addres{
+			font-size: 28rpx;
+			color:#aaa;
+		}
+	}
+	.section{
+		min-width: 690rpx;
+		// padding: 0 30rpx 0 30rpx;
+		margin: 50rpx 30rpx;
+		border: 1px solid #eee;
+		border-radius: 10rpx;
+		box-shadow: 0 0 30rpx rgba(0,0,0,0.05);
+		.list{
+			.row{
+				display: flex;
+				justify-content:space-between;
+				align-items: center;
+				padding: 0 30rpx;
+				height: 100rpx;
+				border-bottom: 1px solid #eee;
+				.left{
+					display: flex;
+					align-items: center;
+					.text{
+						padding-left: 16rpx;
+						color: #666;
+					}
+				}
+				.right{
+					display: flex;
+					align-items: center;
+					.text{
+						font-size: 28rpx;
+						color: #aaa;
+					}
+				}
+			}
+		}
+	}
+}
 </style>
