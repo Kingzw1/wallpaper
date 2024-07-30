@@ -1,5 +1,5 @@
 <template>
-	<view class="homeLayout">
+	<view class="homeLayout pageBg">
 		<view class="banner">
 			<swiper indicator-dots indicator-color="rgba(255,255,255,0.5)" indicator-active-color="#fff" autoplay circular>
 				<swiper-item v-for="item in 3">
@@ -100,7 +100,7 @@
 				align-items: center;
 				justify-content: center;
 				.text{
-					color:#28b389 ;
+					color:$brand-theme-color ;
 					font-weight: 600;
 					font-size: 28rpx;
 				}
